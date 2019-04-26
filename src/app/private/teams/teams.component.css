@@ -1,0 +1,31 @@
+.accordion .card-header:after { 
+    font-family: 'FontAwesome'; 
+    content: "\f068"; 
+    float: right; 
+    
+    
+    } 
+    .accordion { 
+    background-color:white; 
+    color:black; 
+    cursor: pointer; 
+    padding: 10px; 
+    width: 120%; 
+    text-align: left; 
+    border: none; 
+    outline: none; 
+    transition: 0.4s; 
+    position:left; 
+    font-size: 10px; 
+    
+    } 
+    .container{ 
+    margin-left: 5px; 
+    font-size: 13px; 
+    color: #777; 
+    } 
+    
+    .accordion .card-header.collapsed:after { 
+    /* symbol for "collapsed" panels */ 
+    content: "\f063"; 
+    }

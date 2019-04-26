@@ -1,0 +1,23 @@
+<div class="container"> 
+  <!-- to show accordian --> 
+  <div id="accordion" class="accordion"> 
+  <div class="card mb-0" *ngFor="let hero of teamlist"> 
+  <a class="card-header collapsed" data-toggle="collapse" href="#collapseOne{{hero.team_id}}" (click)="Select(hero)"> 
+  
+  <div class="card-title"> 
+  {{hero.team_name}} 
+  
+  </div> 
+  <div class="card-title"> 
+  {{hero.amount}} 
+  </div>  
+  </a> 
+  <!-- to display answers --> 
+  <div id="collapseOne{{hero.team_id}}" class="card-body collapse" data-parent="#accordion" > 
+    <!-- <h1>trfghj</h1> -->
+  <!-- <button (click)="Select(hero)">Click me</button> --> 
+  <div *ngIf="flag==true"><app-edit-team></app-edit-team></div> 
+  </div> 
+  </div>
+<!-- <button (click)="add()">addTeam</button> -->
+<button (click)="update()">addTeam</button>

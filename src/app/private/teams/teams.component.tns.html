@@ -1,0 +1,27 @@
+
+    <Label text="trfghj"></Label>
+    <RadListView #myListView [items]="teamlist" class="list-group" swipeActions="true"> 
+    <ng-template let-item="item"> 
+    
+    <StackLayout orientation="vertical" class="list-group-item" > 
+    
+    <Label [text]="item.team_name" textWrap="true" (tap)=update()></Label> 
+    <StackLayout height="1" backgroundColor="Black"></StackLayout> 
+    </StackLayout> 
+    
+    </ng-template> 
+    
+    
+    <GridLayout *tkListItemSwipeTemplate columns="auto, *, auto" class="gridLayoutLayout"> 
+    <StackLayout id="delete-view" col="2" class="deleteViewStackLayout" (tap)="onRightSwipeClick($event)"> 
+    <Label text="delete" class="swipeTemplateLabel" verticalAlignment="center" horizontalAlignment="center"></Label> 
+    </StackLayout> 
+    </GridLayout> 
+    <StackLayout> 
+    <ng-template > 
+    <Label text="This is list footer with height 100" height="100" class="footer"></Label> 
+    </ng-template> 
+    </StackLayout>   
+    </RadListView> 
+    
+ 

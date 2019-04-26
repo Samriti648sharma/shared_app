@@ -1,0 +1,27 @@
+<!-- add-team page  -->
+<div class="login-page"> 
+  <div class="form"> 
+  <form class="login-form" [formGroup]="add_TeamForm" (ngSubmit)="add(add_TeamForm.value)" > 
+  <h3 class="text-center text-success">Add Team </h3><br> 
+  <!-- <label class="text-left">Email</label> --> 
+  <input type="text" placeholder="team_name" formControlName="team"/> 
+  <!-- <div *ngIf="add_TeamForm.controls['team'].invalid && (add_TeamForm.controls['team'].dirty || add_TeamForm.controls['team'].touched)"> 
+  <span class="text-danger" *ngIf="loginForm.controls['team'].errors.required" > Team Name required Required</span> 
+  
+  </div>  -->
+  
+  <!-- <label class="text-left">PAssword</label> --> 
+  <input type="text" placeholder="Revenue" formControlName="revenue"/> 
+  <!-- <div *ngIf="add_TeamForm.controls['revenue'].invalid && (add_TeamForm.controls['revenue'].dirty || add_TeamForm.controls['revenue'].touched)"> 
+  <span class="text-danger" *ngIf="loginForm.controls['revenue'].errors.required" >Revenue Required</span> 
+  </div>  -->
+  
+  <button type="submit" >Add</button> 
+  <!-- <span *ngIf="flag" class="text-danger">Please Enter coreect Credentials</span> --> 
+  <!-- <p class="message">Not registered? <a routerLink="" >Create an account</a></p> --> 
+  </form> 
+  </div> 
+  </div>
+
+<!-- 
+<button (click)="login()">login</button> -->
